@@ -1,0 +1,163 @@
+footer {
+  background-color: black;
+  padding-top: 6rem;
+  color: hsl(0, 0%, 70%);
+}
+
+.socials {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.socials > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials > ul > li > a {
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  margin: 0.5rem;
+  background-color: hsl(0, 0%, 70%);
+  color: black;
+  border-radius: 25px;
+  transition: all ease-in 0.2s;
+}
+.socials > ul > li > a:hover {
+  background-color: white;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footerHeadings {
+  font-family: "Alfa Slab One", serif;
+  letter-spacing: 0.3rem;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem !important;
+}
+
+.contacts {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contacts > li > span {
+  color: white;
+}
+
+.line {
+  background-color: white;
+  margin: 3rem 0;
+}
+
+.openingHours {
+  display: flex;
+  flex-direction: column;
+}
+.openingHours > li {
+  padding: 0.1rem;
+  text-align: center;
+}
+.openingHours > li > span {
+  color: white;
+  font-weight: 700;
+}
+
+.privacy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  display: flex;
+}
+.privacy > li > a {
+  color: hsl(0, 0%, 70%);
+  text-decoration: none;
+  transition: all ease-in 0.2s;
+}
+.privacy > li > a:hover {
+  color: white;
+}
+
+.copyRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+  font-size: 1.2rem;
+}
+.copyRight > a {
+  color: hsl(0, 0%, 70%);
+  text-decoration: none;
+}
+.copyRight > a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .footerGrid {
+    grid-template-columns: 1fr;
+  }
+  .openingHours {
+    margin-bottom: 2rem;
+  }
+  .contacts {
+    padding-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footerHeadings {
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem !important;
+  }
+  footer {
+    font-size: 1rem;
+  }
+  .socials > ul > li > a {
+    padding: 0.4rem 0.6rem;
+    margin: 0.3rem;
+  }
+  .line {
+    margin: 2rem 0;
+  }
+  .copyRight {
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .copyRight {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .copyRight {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .footerHeadings {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    margin-bottom: 2.5rem !important;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
+  .copyRight {
+    font-size: 0.6rem;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

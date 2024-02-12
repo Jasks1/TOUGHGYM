@@ -1,0 +1,106 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.aboutSection {
+  background-color: transparent;
+}
+
+.aboutIntro {
+  margin-left: 1rem;
+}
+.aboutIntro > h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.aboutText {
+  text-align: center;
+  background-color: hsla(0, 0%, 20%, 0.479);
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.548);
+}
+
+.aboutImgHolder {
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid hsla(0, 0%, 100%, 0.548);
+}
+
+.aboutImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+  }
+  .aboutIntro {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .aboutGrid {
+    margin: 2rem 0.5rem;
+  }
+  .aboutIntro {
+    margin-left: 0.5rem;
+  }
+  .aboutText {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .aboutGrid {
+    margin: 2rem 0rem;
+  }
+  .aboutText {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .aboutIntro {
+    font-size: 0.9rem;
+    margin-left: 0rem;
+  }
+  .aboutIntro > h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .aboutText {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .aboutIntro {
+    font-size: 0.7rem;
+  }
+  .aboutIntro > h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}/*# sourceMappingURL=About.module.css.map */

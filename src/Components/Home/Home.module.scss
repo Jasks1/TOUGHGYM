@@ -1,0 +1,288 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-pink: #f876c3;
+
+.heroSection{
+  background-color: transparent;
+  min-height: 100vh;
+}
+
+.heroLogoImg{
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-family: 'Alfa Slab One', serif;
+  font-weight: 400;
+
+  &>h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+  }
+
+  &>h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+
+  &>p{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+  }
+}
+
+.heroBtnHolder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.btn{
+  display: block;
+  width: 300px;
+  padding: 0.9rem 2rem;
+  font-size: 1.3rem;
+  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all ease-in 0.2s;
+}
+
+.joinBtn{
+  background-color: #e68cc2;
+  border: #e68cc2 1px solid;
+
+  &:hover{
+    background-color: $color-pink;
+    border: $color-pink 1px solid;
+  }
+}
+
+.timeTableBtn{
+  border: 1px solid white;
+
+  &:hover{
+    background-color: white;
+    color: black;
+  }
+}
+
+.mainInfoGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.mainInfoBox{
+  text-align: center;
+  background-color: hsla(0, 0%, 20%, 0.479);
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.548);
+
+  &>h1{
+    font-family: 'Alfa Slab One', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 2.5rem;
+  }
+}
+
+// MEDIA QUERY
+
+@media screen and (max-width:900px) {
+  .heroText{
+    &>h1{
+      font-size: 4rem;
+      letter-spacing: 0.5rem ;
+    }
+
+    &>h2{
+      font-size: 2rem;
+      letter-spacing: 0.2rem ;
+    }
+  }
+
+  .heroLogoImg{width: 200px;}
+}
+
+@media screen and (max-width: 800px) {
+  .mainInfoGrid{grid-template-columns: 1fr;}
+  .btn{width: 250px;}
+}
+
+@media screen and (max-width:580px) {
+
+  .btn{width: 220px;}
+  
+  .heroLogoImg{
+      width: 150px;
+    }
+
+  .heroText{
+
+    
+
+    &>h1{
+      font-size: 3rem;
+      letter-spacing: 0.3rem;
+    }
+  
+    &>h2{
+      font-size: 1.8rem;
+      letter-spacing: 0.2rem;
+    }
+  
+    &>p{
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .mainInfoGrid{margin: 2rem 0.5rem;}
+
+  .mainInfoBox{
+    font-size: 1.2rem;
+    &>h1{
+      letter-spacing: 0.2rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn{width: 150px;}
+
+  .mainInfoGrid{margin: 2rem 0rem;}
+
+  .mainInfoBox{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    &>h1{
+      letter-spacing: 0.1rem;
+      font-size: 1.3rem;
+    }
+  }
+  
+  .heroLogoImg{
+      width: 130px;
+  }
+
+  .heroText{
+    &>h1{
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
+  
+    &>h2{
+      font-size: 1.3rem;
+      letter-spacing: 0.1rem;
+    }
+  
+    &>p{
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .btn{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+
+  .heroBtnHolder{gap: 0.5rem;}
+
+  .btn{width: 110px;}
+
+  .heroLogoImg{
+    width: 80px;
+  }
+
+    .heroText{
+  &>h1{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &>h2{
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &>p{
+    letter-spacing: 0rem;
+  }
+  }
+
+  .btn{
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .mainInfoBox{
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    &>h1{
+      letter-spacing: 0.1rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 250px) {
+
+  .heroBtnHolder{gap: 0.3rem;}
+
+  .btn{width: 100px;}
+
+  .heroText{
+  &>h1{
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &>h2{
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+  }
+
+  &>p{
+    letter-spacing: 0rem;
+  }
+  }
+
+  .btn{
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+}

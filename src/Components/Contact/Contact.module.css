@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactSection {
+  background-color: transparent;
+  color: white;
+}
+
+.contactIntro {
+  margin-left: 1rem;
+}
+.contactIntro > h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.addressInfo {
+  text-align: center;
+  background-color: hsla(0, 0%, 20%, 0.479);
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.548);
+}
+.addressInfo > h1 {
+  font-family: "Alfa Slab One", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.addressInfo > p > span {
+  color: white;
+  font-weight: 700;
+}
+
+.mapGrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.mapContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  border: none;
+  width: 90%;
+  height: 300px;
+  filter: grayscale(50);
+  transition: all ease-in 0.2s;
+}
+.map:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 1000px) {
+  .mapGrid {
+    grid-template-columns: 1fr;
+  }
+  .contactIntro {
+    text-align: center;
+  }
+  .map {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .contactIntro {
+    margin-left: 0.5rem;
+  }
+  .mapGrid {
+    margin: 2rem 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mapGrid {
+    margin: 2rem 0.3rem;
+  }
+  .addressInfo {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .addressInfo > h1 {
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+  }
+  .contactIntro {
+    margin-left: 0;
+  }
+  .contactIntro > h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .mapGrid {
+    margin: 2rem 0.2rem;
+  }
+  .addressInfo {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .addressInfo > h1 {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+  .contactIntro {
+    font-size: 0.7rem;
+  }
+  .contactIntro > h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}/*# sourceMappingURL=Contact.module.css.map */

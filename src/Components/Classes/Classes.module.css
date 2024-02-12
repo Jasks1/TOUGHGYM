@@ -1,0 +1,100 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.classesIntro {
+  margin-left: 1rem;
+}
+.classesIntro > h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.classesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.classBox {
+  text-align: center;
+  background-color: hsla(0, 0%, 20%, 0.479);
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.548);
+}
+.classBox > h1 {
+  font-family: "Alfa Slab One", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .classesGrid {
+    grid-template-columns: 1fr;
+  }
+  .classesIntro {
+    text-align: center;
+    margin-left: 0.5rem;
+  }
+}
+@media screen and (max-width: 580px) {
+  .classesGrid {
+    margin: 2rem 0.5rem;
+  }
+  .classesIntro {
+    margin-left: 0.5rem;
+  }
+  .classBox {
+    font-size: 1.2rem;
+  }
+  .classBox > h1 {
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .classesGrid {
+    margin: 2rem 0rem;
+  }
+  .classBox {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .classBox > h1 {
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+  }
+  .classesIntro {
+    font-size: 0.9rem;
+    margin-left: 0rem;
+  }
+  .classesIntro > h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .classBox {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .classBox > h1 {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+  .classesIntro {
+    font-size: 0.7rem;
+  }
+  .classesIntro > h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}/*# sourceMappingURL=Classes.module.css.map */

@@ -1,0 +1,164 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timetableIntro {
+  margin-left: 1rem;
+}
+.timetableIntro > h1 {
+  font-family: "Alfa Slab One", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.timetableGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.line {
+  margin: 2rem 0;
+  color: white;
+}
+
+.timetable {
+  margin-top: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.weekDayText {
+  font-family: "Alfa Slab One", serif;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+  transition: all ease-in 0.15s;
+}
+.weekDayText:hover {
+  color: hsl(0, 0%, 70%);
+}
+
+.timetableLists {
+  background-color: hsla(0, 0%, 20%, 0.479);
+  padding: 1rem;
+  border-radius: 25px;
+  border: 1px solid hsla(0, 0%, 100%, 0.548);
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+}
+.timetableLists > li > b {
+  font-family: "Alfa Slab One", serif;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.timetableLists > li {
+  margin: 2rem 0;
+}
+.timetableLists > li > ul {
+  list-style: none;
+}
+.timetableLists > li > ul > li > b {
+  font-family: "Alfa Slab One", serif;
+  font-weight: 300;
+}
+
+.timeIndicationIcon {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .timetableGrid {
+    grid-template-columns: 1fr;
+  }
+  .timetableIntro {
+    text-align: center;
+    margin-left: 0.5rem;
+  }
+  .timetable {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 580px) {
+  .timetableGrid {
+    margin: 2rem 0.5rem;
+  }
+  .timetableIntro {
+    margin-left: 0.5rem;
+  }
+  .timetableLists {
+    font-size: 1.2rem;
+  }
+  .timetableLists > li > b {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timetableGrid {
+    margin: 2rem 0rem;
+  }
+  .timeIndicationIcon {
+    font-size: 1.9rem;
+  }
+  .timetableIntro {
+    font-size: 0.9rem;
+    margin-left: 0rem;
+  }
+  .timetableIntro > h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  .weekDayText {
+    font-size: 1.5rem;
+  }
+  .timetableLists {
+    padding: 0.9rem;
+    font-size: 0.9rem;
+  }
+  .timetableLists > li > b {
+    font-size: 1.5rem;
+  }
+  .timetableLists > li {
+    margin: 2rem 0;
+  }
+  .timetableLists > li > ul {
+    list-style: none;
+  }
+  .timetableLists > li > ul > li > b {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 300;
+  }
+}
+@media screen and (max-width: 330px) {
+  .timeIndicationIcon {
+    font-size: 1.4rem;
+  }
+  .timetableIntro {
+    font-size: 0.7rem;
+  }
+  .timetableIntro > h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .weekDayText {
+    font-size: 1rem;
+  }
+  .timetableLists {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .timetableLists > li > b {
+    font-size: 1rem;
+  }
+  .timetableLists > li {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=Timetable.module.css.map */
